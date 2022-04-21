@@ -3,13 +3,6 @@
     <v-btn icon>
       <v-icon>mdi-magnify</v-icon>
     </v-btn>
-    <v-divider vertical class="ml-1 mr-3"></v-divider>
-    <v-btn icon>
-      <v-icon>mdi-menu</v-icon>
-    </v-btn>
-    <v-toolbar-title>
-      <span class="caption">Selecione</span><br>Categoria
-    </v-toolbar-title>
     <v-divider vertical class="ml-5"></v-divider>
     <div
       style="
@@ -24,7 +17,7 @@
     </div>
     <v-spacer></v-spacer>
     <v-divider vertical></v-divider>
-    <v-btn icon class="mx-1">
+    <v-btn @click="openModalCart" icon class="mx-1">
       <v-icon>mdi-account-outline</v-icon>
     </v-btn>
     <v-divider vertical></v-divider>
@@ -39,8 +32,17 @@
 
 <script>
 export default {
-  
+  data: () => ({
+    modalCart: false
+  }),
+  methods: {
+    openModalCart() {
+      this.modalCart = true
+      this.$emit('setModalCart', this.modalCart)
+    }
+  }
 }
+  
 </script>
 
 <style>

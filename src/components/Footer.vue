@@ -7,7 +7,8 @@
             <h3>Jovi Store</h3>
           </v-card-text>
           <v-card-text class="grey--text pt-0">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Projeto desenvolvido para aprendizado de funções básicas do Vue.js + Vuetify.
+            Project developed to learn basic functions of Vue.js + Vuetify.
           </v-card-text>
           <v-toolbar flat color="transparent">
             <h5>Guides</h5>

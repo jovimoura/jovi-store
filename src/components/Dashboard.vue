@@ -1,5 +1,7 @@
 <template>
-  <v-container fluid>
+  <div>
+    <!-- <navbar /> -->
+    <v-container fluid>
     <v-card
       color="#3853D8"
       height="150px"
@@ -97,7 +99,7 @@
         <v-col cols="12" sm="3" class="mt-n6 px-0">
           <v-toolbar flat outlined>
             <v-toolbar-title>
-              SPORT BY: <span>Price $-$$</span>
+              Ordenar por: <span>Mais procurados</span>
             </v-toolbar-title>
             <v-spacer></v-spacer>
             <v-btn icon class="mr-4">
@@ -107,7 +109,7 @@
         </v-col>
         <v-col cols="12" sm="3" class="mt-n6 px-0">
           <v-toolbar flat outlined>
-            <v-toolbar-title>SHOW: <span>12</span></v-toolbar-title>
+            <v-toolbar-title>Exibir: <span>12</span></v-toolbar-title>
             <v-spacer></v-spacer>
             <v-btn class="mr-4" icon>
               <v-icon color="#000">mdi-menu-down</v-icon>
@@ -125,7 +127,7 @@
             </v-btn>
             <v-divider vertical></v-divider>
             <v-toolbar-title class="ml-2">
-              <strong>COMPARE: </strong>
+              <strong>Compare: </strong>
             </v-toolbar-title>
             <v-spacer></v-spacer>
             <v-badge class="mr-2" color="#3853D8" content="3"></v-badge>
@@ -135,7 +137,7 @@
           <v-card flat outlined tile>
             <v-toolbar flat>
               <v-icon class="mr-2" color="#000">mdi-chevron-down</v-icon>
-              <strong>CATEGORIAS</strong>
+              <strong>Categorias</strong>
               <v-spacer></v-spacer>
               <v-icon small color="grey">mdi-close</v-icon>
             </v-toolbar>
@@ -183,7 +185,7 @@
           <v-card flat outlined tile>
             <v-toolbar flat>
               <v-icon class="mr-2" color="#000">mdi-chevron-down</v-icon>
-              <strong>BRAND</strong>
+              <strong>Filtre</strong>
               <v-spacer></v-spacer>
               <v-icon color="grey" small>mdi-close</v-icon>
             </v-toolbar>
@@ -207,7 +209,7 @@
           <v-card>
             <v-toolbar flat>
               <v-icon class="mr-2" color="#000">mdi-chevron-down</v-icon>
-              <strong>COLOR</strong>
+              <strong>Cores</strong>
               <v-spacer></v-spacer>
               <v-icon color="grey" small>mdi-close</v-icon>
             </v-toolbar>
@@ -245,7 +247,7 @@
           <v-card flat outlined>
             <v-toolbar flat>
               <v-icon class="mr-2" color="#000">mdi-chevron-down</v-icon>
-              <strong>SIZE</strong>
+              <strong>Tamanho</strong>
               <v-spacer></v-spacer>
               <v-icon color="grey" small>mdi-close</v-icon>
             </v-toolbar>
@@ -328,7 +330,7 @@
         </v-col>
         <v-col cols="12" sm="3" class="mt-n3 px-0 pb-0">
           <v-toolbar class="text-center" flat outlined>
-            <v-pagination v-model="page" :length="3"></v-pagination>
+            <v-pagination v-model="page" :length="4"></v-pagination>
           </v-toolbar>
         </v-col>
         <v-col cols="12" sm="3" class="mt-n3 pl-0 pb-0">
@@ -359,7 +361,7 @@
         <v-col cols="12" sm="12">
           <v-card flat color="transparent" class="d-flex justify-center">
             <v-text-field
-              placeholder="Enter Your Email"
+              placeholder="Digite seu E-mail"
               rounded
               class="shrink"
               background-color="grey"
@@ -372,10 +374,15 @@
       </v-row>
     </v-card>
   </v-container>
+  </div>
+  
+  
 </template>
 
 <script>
+import Navbar from './Navbar.vue';
 export default {
+  components: { Navbar },
   data: () => ({
     page: 1,
     items: [
@@ -406,27 +413,27 @@ export default {
         count: "1",
       },
       {
-        title: "Running",
+        title: "Corrida",
         count: "23",
       },
       {
-        title: "Training and Gym",
+        title: "Treino e Academia",
         count: "45",
       },
       {
-        title: "Basketball",
+        title: "Basquete",
         count: "11",
       },
       {
-        title: "Football",
+        title: "Volei",
         count: "15",
       },
       {
-        title: "Soccer",
+        title: "Futebol",
         count: "32",
       },
       {
-        title: "Baseball",
+        title: "Basebol",
         count: "8",
       },
       {
@@ -434,7 +441,7 @@ export default {
         count: "15",
       },
       {
-        title: "Skateboarding",
+        title: "Skatismo",
         count: "22",
       },
     ],
@@ -444,15 +451,15 @@ export default {
         state: true,
       },
       {
-        title: "Running",
+        title: "Corrida",
         state: true,
       },
       {
-        title: "Training & Gym",
+        title: "Treino e Academia",
         state: true,
       },
       {
-        title: "Basketball",
+        title: "Basquete",
         state: true,
       },
     ],
