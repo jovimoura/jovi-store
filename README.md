@@ -11,7 +11,7 @@ A Jovi Store é um E-commerce idealizado por mim que utiliza Vue.js + Vuetify pa
 # A aplicação está on-line no link: 
 
 ```
-exemplo link
+https://jovi-store.vercel.app/
 ```
 
 ## Caso você queira analisar o projeto em sua maquina, siga este passo a passo: 😁
