@@ -2,6 +2,10 @@
 
 A Jovi Store é um E-commerce idealizado por mim que utiliza Vue.js + Vuetify para trazer uma aplicação web simples e com design elegante.
 
+<p>
+    Só um obs, a responsividade não foi feita nesse projeto😅
+</p>
+
 <br>
 
 # A aplicação está on-line no link: 
@@ -58,18 +62,13 @@ http://localhost:8080/
 
 <br>
 
-## Imagem do design responsivo 📱
-
-<img src='rota'>
-
-<br>
 
 ## Tecnologias utilizadas🦉
 
 <ul>
     <li>Vue.js</li>
     <li>Vuetify</li>
-    <li>Java Script</li>
+    <li>JavaScript</li>
 </ul>
 
 <br>

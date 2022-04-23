@@ -9,6 +9,8 @@
           <v-card-text class="grey--text pt-0">
             Projeto desenvolvido para aprendizado de funções básicas do Vue.js + Vuetify.
             Project developed to learn basic functions of Vue.js + Vuetify.
+            Ainda restam algumas coisas faltando no projeto mas em breve implementarei todas minhas ideias!
+            This project so has many things without conclusions, but I will finish cooming soon!
           </v-card-text>
           <v-toolbar flat color="transparent">
             <h5>Guides</h5>
